@@ -1,0 +1,22 @@
+.bio {
+  color: #1d2a3b;
+  font-size: 10vw;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
+  &__name {
+    font-size: 120px;
+    font-weight: bold;
+    color: white;
+    justify-self: flex-end;
+  }
+ 
+  &__occupation {
+    font-size: 24px;
+  }
+}
