@@ -4,7 +4,7 @@ import { commands } from '../utils/terminal';
 
 import './Terminal.scss';
 
-const PATH_PREFIX = "C:\\user\\guest";
+const PATH_PREFIX = "/dev/guest";
 
 const Terminal = () => {
   const [commandHistory, setCommandHistory] = useState([]);
@@ -14,13 +14,12 @@ const Terminal = () => {
 
   const clearCommandEmitter = () => setCommand('');
 
-  const handleKeyPressed = ({ key }) => {
+  const handleTerminalKeyPressed = ({ key }) => {
     if (key === 'Enter') {
       commandHistory.push(command);
       clearCommandEmitter();
     }
   }
-
 
   return (
     <div className="terminal">
@@ -32,13 +31,13 @@ const Terminal = () => {
         <div className="terminal__screen-results">
           {commandHistory.map((cmd, i) => (
             <div className="terminal__screen-row" key={`${cmd}${i}`}>
-              <p className="terminal__command">{`${PATH_PREFIX} - ${cmd}`}</p>
+              <p className="terminal__command">{`${PATH_PREFIX} → ${cmd}`}</p>
               <p className="terminal__result">{commands[cmd] && commands[cmd].result || 'Command not found. Type "help" for more info.'}</p>
             </div>
           ))}
         </div>
       </div>
-      <div className="terminal__actions" onKeyDown={handleKeyPressed}>
+      <div className="terminal__actions" onKeyDown={handleTerminalKeyPressed}>
           <span className="terminal__actions-symbol">{`$ ${PATH_PREFIX}`}</span>
         <input tabIndex="0" autoFocus className="terminal__actions-command" type="text" value={command} onChange={handleInputChange}/>
       </div>

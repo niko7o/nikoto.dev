@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Bio from './Bio';
+import SlidingPanel from './SlidingPanel';
+import Terminal from './Terminal';
 
 import './Homepage.scss';
-import Terminal from './Terminal';
 
 const Onboarding = () => (
   <div className="homepage">
-    <Bio />
+    <SlidingPanel step={'onboarding'} />
     <Terminal />
   </div>
 )
