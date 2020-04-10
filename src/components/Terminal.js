@@ -4,10 +4,24 @@ import './Terminal.scss';
 
 const commands = {
   'help': {
-    result: 'What do you need help with?'
+    result: '[available commands are]: about, skills, projects'
   },
-  'marco': {
-    result: 'polo'
+  'whois weapon': {
+    result: <img src="" />
+  },
+  'about': {
+    result: 'Software Engineer from Belgium. Data freak. Clean code lover.'
+  },
+  'skills': {
+    result: 
+    <>
+      <p>Frontend: React, React Native</p>
+      <p>Backend: Node.js, PHP</p>
+      <p>Other: TDD, BDD</p>
+    </>
+  },
+  'projects': {
+    result: ''
   }
 }
 
@@ -19,17 +33,10 @@ const Terminal = () => {
 
   const clearCommandEmitter = () => setCommand('');
 
-  let result;
-
   const handleKeyPressed = ({ key }) => {
-    switch(key) {
-      case 'Enter':
-        commandHistory.push(command);
-        console.log(commands[command].result)
-        clearCommandEmitter();
-        break;
-      default: 
-        return;
+    if (key === 'Enter') {
+      commandHistory.push(command);
+      clearCommandEmitter();
     }
   }
 
@@ -42,9 +49,9 @@ const Terminal = () => {
         <p className="terminal__screen-hint"></p>
         <div className="terminal__screen-results">
           {commandHistory.map((pastCommand, i) => (
-            <div className="terminal__screen-row" key={`com-${pastCommand}-${i}`}>
+            <div className="terminal__screen-row" key={`${pastCommand}${i}`}>
               <p className="terminal__command">C:\users\guest\{pastCommand}</p>
-              <p className="terminal__result">{commands[pastCommand].result || ''}</p>
+              <p className="terminal__result">{commands[pastCommand] && commands[pastCommand].result || 'No results found. Type "help" for more info.'}</p>
             </div>
           ))}
         </div>
