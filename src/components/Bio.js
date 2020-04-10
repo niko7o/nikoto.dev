@@ -9,6 +9,8 @@ const Bio = () => (
       <p className="bio__occupation">Software Engineer<br />@ Spotahome <img className="bio__spotahome" src="./images/spotahome.jpg" /></p>
     </div>
 
+    <code className="bio__teaser">Want to know me better? Use the terminal. Start by typing "help" and pressing enter.</code>
+
     <div className="bio__information-socials">
       <a href="https://github.com/nikotomad" target="_blank" className="bio__information-socials-link">
         <img className="bio__information-icon" src="./images/icon-github.svg" width="40"/>

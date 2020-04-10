@@ -19,6 +19,12 @@
     }
   }
 
+  &__teaser {
+    display: block;
+    font-size: 18px;
+    margin: $gap*2 0;
+  }
+
   &__spotahome {
     width: 34px;
     vertical-align: middle;
@@ -26,7 +32,6 @@
 
   &__occupation {
     color: $gray;
-    margin-bottom: $gap * 3;
     font-size: 18px;
     text-align: left;
     @include bp(tablet) {
