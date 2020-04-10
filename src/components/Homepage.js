@@ -5,11 +5,11 @@ import Terminal from './Terminal';
 
 import './Homepage.scss';
 
-const Onboarding = () => (
+const Homepage = () => (
   <div className="homepage">
     <SlidingPanel step={'onboarding'} />
     <Terminal />
   </div>
 )
 
-export default Onboarding;
+export default Homepage;
