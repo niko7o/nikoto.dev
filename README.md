@@ -1,3 +1,1 @@
 # nikoto.dev
-
-personal page
