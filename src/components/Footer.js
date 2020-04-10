@@ -12,7 +12,7 @@ const Footer = () => (
       data-show-count="true" 
       aria-label="Star nikotomad/nikoto.dev on GitHub"
     >
-      Star
+      Stars
     </a>
   </div>
 );

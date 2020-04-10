@@ -26,7 +26,12 @@ const Onboarding = () => (
       <code className="onboarding__teaser">Want to know me better? Use the terminal. <br />Start by typing "help" and pressing enter.</code>
 
       <div className="onboarding__information-socials">
-        <a href="https://github.com/nikotomad" target="_blank" rel="noopener noreferrer" className="onboarding__information-socials-link">
+        <a 
+          href="https://github.com/nikotomad" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="onboarding__information-socials-link"
+        >
           <img 
             className="onboarding__information-icon" 
             src="./images/icon-github.svg" 
@@ -35,7 +40,12 @@ const Onboarding = () => (
           />
           Github
         </a>
-        <a href="https://www.linkedin.com/in/nikolaasverlee/" target="_blank" rel="noopener noreferrer" className="onboarding__information-socials-link">
+        <a 
+          href="https://www.linkedin.com/in/nikolaasverlee/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="onboarding__information-socials-link"
+        >
           <img 
             className="onboarding__information-icon" 
             src="./images/icon-linkedin.webp" 
