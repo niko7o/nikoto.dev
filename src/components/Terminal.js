@@ -16,18 +16,12 @@ const Terminal = ({ panelContext }) => {
   const handleInputChange = e => 
     setCommand(e.target.value);
 
-  const clearCommandEmitter = () => 
-    setCommand('');
-
-  const clearCommandHistory = () =>
-    setCommandHistory([]);
-
   const handleTerminalKeyPressed = ({ key }) => {
     const hasPressedEnter = key === 'Enter';
     
     if (command && key === 'Enter') {
       commandHistory.push(command);
-      clearCommandEmitter();
+      setCommand('');
     }
 
     if (command === 'about' && hasPressedEnter) {
@@ -39,7 +33,7 @@ const Terminal = ({ panelContext }) => {
     }
 
     if (command === 'clear' && hasPressedEnter) {
-      clearCommandHistory();
+      setCommandHistory([]);
     }
   }
 
