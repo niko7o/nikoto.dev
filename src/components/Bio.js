@@ -2,8 +2,6 @@ import React from 'react';
 
 import './Bio.scss';
 
-const CURRENT_COMPANY = 'Spotahome';
-
 const Bio = () => (
   <div className="bio">
     <div className="bio__information-basic">
