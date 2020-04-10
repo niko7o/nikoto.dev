@@ -7,8 +7,8 @@ const CURRENT_COMPANY = 'Spotahome';
 const Bio = () => (
   <div className="bio">
     <div className="bio__information-basic">
-      <p className="bio__name">Heya! I'm <span className="bio__name--heavy">nikoto</span></p>
-      <p className="bio__occupation">Software Engineer<br />@ {CURRENT_COMPANY}</p>
+      <p className="bio__name">Heya! 👋 I'm <span className="bio__name--heavy">nikoto.</span></p>
+      <p className="bio__occupation">Software Engineer<br />@ Spotahome <img className="bio__spotahome" src="./images/spotahome.jpg" /></p>
     </div>
 
     <div className="bio__information-socials">

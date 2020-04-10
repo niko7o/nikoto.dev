@@ -18,11 +18,13 @@
     
     &--heavy {
       font-weight: bold;
-      color: #ffffff;
-      background-color: black;
-      padding: 8px 24px;
       text-transform: uppercase;
     }
+  }
+
+  &__spotahome {
+    width: 34px;
+    vertical-align: middle;
   }
 
   &__occupation {
@@ -31,7 +33,8 @@
     font-size: 18px;
     text-align: left;
     @include bp(tablet) {
-      font-size: 32px;
+      font-size: 24px;
+      line-height: 36px;
     }
   }
 
