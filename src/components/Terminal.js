@@ -41,7 +41,6 @@ const Terminal = ({ panelContext }) => {
         <span className="terminal__navbar-close" />
       </div>
       <div className="terminal__screen">
-        <p className="terminal__screen-hint"></p>
         <div className="terminal__screen-results">
           {commandHistory && commandHistory.map((cmd, i) => (
             <div className="terminal__screen-row" key={`${cmd}${i}`}>
@@ -67,6 +66,7 @@ const Terminal = ({ panelContext }) => {
             value={command}
             onChange={handleInputChange}
             tabIndex="0"
+            placeholder="type command.."
           />
       </div>
     </div>
