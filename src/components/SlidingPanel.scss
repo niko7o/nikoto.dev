@@ -1,0 +1,7 @@
+@import '../styles/base.scss';
+
+.sliding-panel {
+  @include bp(desktop) {
+    width: 40%;
+  }
+}

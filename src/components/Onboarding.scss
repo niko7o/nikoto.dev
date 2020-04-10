@@ -1,12 +1,8 @@
 @import '../styles/base.scss';
 @import '../styles/animations.scss';
 
-.bio {
+.onboarding {
   color: #000000;
- 
-  @include bp(desktop) {
-    max-width: 40%;
-  }
 
   &__name {
     font-size: 46px;

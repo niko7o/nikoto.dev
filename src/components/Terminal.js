@@ -1,7 +1,7 @@
 /* eslint-disable no-mixed-operators */
 import React, { useState } from 'react';
 
-import { commands } from '../utils/terminal';
+import { commandHelperHints } from '../utils/terminal';
 
 import { PanelConsumer } from '../contexts/panel-context';
 
@@ -9,7 +9,7 @@ import './Terminal.scss';
 
 const PATH_PREFIX = "/dev/guest";
 
-const Terminal = () => {
+const Terminal = ({ panelContext }) => {
   const [commandHistory, setCommandHistory] = useState([]);
   const [command, setCommand] = useState('');
 
@@ -20,9 +20,19 @@ const Terminal = () => {
     setCommand('');
 
   const handleTerminalKeyPressed = ({ key }) => {
-    if (key === 'Enter') {
+    const hasPressedEnter = key === 'Enter';
+    
+    if (command && key === 'Enter') {
       commandHistory.push(command);
       clearCommandEmitter();
+    }
+
+    if (command === 'about' && hasPressedEnter) {
+      panelContext.updateStep('onboarding')
+    }
+
+    if (command === 'projects' && hasPressedEnter) {
+      panelContext.updateStep('projects')
     }
   }
 
@@ -43,7 +53,7 @@ const Terminal = () => {
                   </p>
                   <p className="terminal__result">
                     {
-                      commands[cmd] && commands[cmd].result 
+                      commandHelperHints[cmd] && commandHelperHints[cmd].result 
                       || 'Command not found. Type "help" for more info.'
                     }
                   </p>

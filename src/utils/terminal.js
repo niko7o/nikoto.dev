@@ -2,7 +2,7 @@ import React from 'react';
 
 const availableCommands = ['about', 'team', 'skills'];
 
-export const commands = {
+export const commandHelperHints = {
   'help': {
     result: `[available commands are]: ${Object.values(availableCommands)}`
   },

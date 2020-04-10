@@ -1,12 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import Onboarding from './Onboarding';
 import Projects from './Projects';
 
+import { PanelConsumer } from '../contexts/panel-context';
+
 import './SlidingPanel.scss';
 
-const renderStep = step => {
+const renderStep = (step, updateStep) => {
   switch(step) {
     case 'onboarding': 
       return <Onboarding />
@@ -17,18 +18,14 @@ const renderStep = step => {
   }
 }
 
-const SlidingPanel = ({ step, children }) => (
-  <>
-    {renderStep(step)}
-  </>
+const SlidingPanel = () => (
+  <PanelConsumer>
+    {panelContext => (
+      <div className="sliding-panel">
+        {renderStep(panelContext.step)}
+      </div>
+    )}
+  </PanelConsumer>
 );
-
-SlidingPanel.propTypes = {
-  step: PropTypes.string
-}
-
-SlidingPanel.defaultProps= {
-  step: 'onboarding'
-}
 
 export default SlidingPanel;
