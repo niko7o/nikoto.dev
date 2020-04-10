@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Bio.scss';
+import './Onboarding.scss';
 
 const Bio = () => (
   <div className="bio">

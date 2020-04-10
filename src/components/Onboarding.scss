@@ -32,9 +32,12 @@
   }
 
   &__teaser {
-    display: block;
-    font-size: 18px;
-    margin: $gap*2 0;
+    display: none;
+    @include bp(desktop) {
+      display: block;
+      font-size: 18px;
+      margin: $gap*2 0;
+    }
   }
 
   &__spotahome {
@@ -47,10 +50,15 @@
     text-align: left;
     font-size: 18px;
     line-height: 24px;
+    margin-bottom: $gap * 2;
 
     @include bp(tablet) {
       font-size: 24px;
       line-height: 36px;
+    }
+
+    @include bp(desktop) {
+      margin-bottom: 0;
     }
   }
 
