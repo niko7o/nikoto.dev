@@ -9,6 +9,7 @@ export const commandHelperHints = {
       <p>[available commands are]:</p>
       <p>- home</p>
       <p>- about</p>
+      <p>- contact</p>
       <p>- team</p>
       <p>- skills</p>
       <p>- projects</p>
@@ -33,10 +34,16 @@ export const commandHelperHints = {
   'clear': {
     result: ''
   },
+  'contact': {
+    result: 'Liked this experiment? Send me an invite on linkedin with the code word "terminalsrock" and we can connect.'
+  },
   'whois weapon': {
     result: <img src="./images/avatar-niko.jpg" alt="weapon" width="100"/>
   },
+  'home': {
+    result: 'Navigating to onboarding.'
+  },
   'projects': {
-    result: 'this section is still under construction. Feel free to check back on it later! You can go back to the first screen by writing "home"'
+    result: 'Navigating to projects. This section is still under construction. Feel free to check back on it later! You can go back to the first screen by writing "home"'
   }
 }

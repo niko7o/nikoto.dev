@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import SlidingPanel from './SlidingPanel';
 import Terminal from './Terminal';
+import Footer from './Footer';
 
 import { PanelProvider } from '../contexts/panel-context';
 
@@ -22,6 +23,7 @@ const Homepage = () => {
       <div className="homepage">
         <SlidingPanel panelContext={panelContext} />
         <Terminal panelContext={panelContext} />
+        <Footer />
       </div>
     </PanelProvider>
   )
