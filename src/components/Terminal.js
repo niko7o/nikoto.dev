@@ -10,7 +10,7 @@ const commands = {
     result: <img src="./images/avatar-niko.jpg" width="100"/>
   },
   'about': {
-    result: 'Software Engineer from Belgium. Data freak. Clean code fanatic.'
+    result: 'Based in Madrid. Software Engineer. Data freak. Clean code fanatic.'
   },
   'skills': {
     result: 
@@ -50,7 +50,7 @@ const Terminal = () => {
       <div className="terminal__screen">
         <p className="terminal__screen-hint"></p>
         <div className="terminal__screen-results">
-          {commandHistory.slice(0).reverse().map((pastCommand, i) => (
+          {commandHistory.map((pastCommand, i) => (
             <div className="terminal__screen-row" key={`${pastCommand}${i}`}>
               <p className="terminal__command">C:\users\guest - {pastCommand}</p>
               <p className="terminal__result">{commands[pastCommand] && commands[pastCommand].result || 'Command not found. Type "help" for more info.'}</p>
