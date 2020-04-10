@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Onboarding from './Onboarding';
-import Projects from './Projects';
+import Onboarding from './panels/Onboarding';
+import Projects from './panels/Projects';
 
 import { PanelConsumer } from '../contexts/panel-context';
 
 import './SlidingPanel.scss';
 
-const renderStep = (step, updateStep) => {
+const renderStep = step => {
   switch(step) {
     case 'onboarding': 
       return <Onboarding />

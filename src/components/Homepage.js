@@ -14,8 +14,7 @@ const Homepage = () => {
 
   const panelContext = {
     step: currentStep,
-    updateStep: desiredStep =>
-      setCurrentStep(desiredStep)
+    updateStep: desiredStep => setCurrentStep(desiredStep)
   }
   
   return (

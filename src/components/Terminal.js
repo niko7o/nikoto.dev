@@ -7,7 +7,7 @@ import { PanelConsumer } from '../contexts/panel-context';
 
 import './Terminal.scss';
 
-const PATH_PREFIX = "/dev/guest";
+const TERMINAL_PATH_PREFIX = "/dev/guest";
 
 const Terminal = ({ panelContext }) => {
   const [commandHistory, setCommandHistory] = useState([]);
@@ -18,6 +18,9 @@ const Terminal = ({ panelContext }) => {
 
   const clearCommandEmitter = () => 
     setCommand('');
+
+  const clearCommandHistory = () =>
+    setCommandHistory([]);
 
   const handleTerminalKeyPressed = ({ key }) => {
     const hasPressedEnter = key === 'Enter';
@@ -34,6 +37,10 @@ const Terminal = ({ panelContext }) => {
     if (command === 'projects' && hasPressedEnter) {
       panelContext.updateStep('projects')
     }
+
+    if (command === 'clear' && hasPressedEnter) {
+      clearCommandHistory();
+    }
   }
 
   return (
@@ -46,10 +53,10 @@ const Terminal = ({ panelContext }) => {
           <div className="terminal__screen">
             <p className="terminal__screen-hint"></p>
             <div className="terminal__screen-results">
-              {commandHistory.map((cmd, i) => (
+              {commandHistory && commandHistory.map((cmd, i) => (
                 <div className="terminal__screen-row" key={`${cmd}${i}`}>
                   <p className="terminal__command">
-                    {`${PATH_PREFIX} → ${cmd}`}
+                    {`${TERMINAL_PATH_PREFIX} → ${cmd}`}
                   </p>
                   <p className="terminal__result">
                     {
@@ -62,7 +69,7 @@ const Terminal = ({ panelContext }) => {
             </div>
           </div>
           <div className="terminal__actions" onKeyDown={handleTerminalKeyPressed}>
-              <span className="terminal__actions-symbol">{`$ ${PATH_PREFIX}`}</span>
+              <span className="terminal__actions-symbol">{`$ ${TERMINAL_PATH_PREFIX}`}</span>
               <input 
                 autoFocus 
                 type="text" 
