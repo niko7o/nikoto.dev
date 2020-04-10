@@ -1,7 +1,12 @@
 @import '../styles/base.scss';
+@import '../styles/animations.scss';
 
 .bio {
   color: #000000;
+ 
+  @include bp(desktop) {
+    max-width: 40%;
+  }
 
   &__name {
     font-size: 46px;
@@ -11,12 +16,19 @@
 
     @include bp(tablet) {
       font-size: 72px;
+      line-height: 90px;
     }
     
     &--heavy {
       font-weight: bold;
       text-transform: uppercase;
     }
+  }
+
+  &__waving-hand {
+    display: inline-block;
+    animation-duration: 1s;
+    animation-name: wave-hand;
   }
 
   &__teaser {
@@ -32,8 +44,10 @@
 
   &__occupation {
     color: $gray;
-    font-size: 18px;
     text-align: left;
+    font-size: 18px;
+    line-height: 24px;
+
     @include bp(tablet) {
       font-size: 24px;
       line-height: 36px;
