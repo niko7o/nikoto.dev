@@ -37,6 +37,6 @@ export const commandHelperHints = {
     result: <img src="./images/avatar-niko.jpg" alt="weapon" width="100"/>
   },
   'projects': {
-    result: 'this section is still under construction. Feel free to check back on it later!'
+    result: 'this section is still under construction. Feel free to check back on it later! You can go back to the first screen by writing "home"'
   }
 }
