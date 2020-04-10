@@ -1,15 +1,20 @@
 @import '../styles/colors.scss';
 @import '../styles/spacings.scss';
+@import '../styles/breakpoints.scss';
 
 .bio {
   color: #000000;
   margin: 0 auto;
 
   &__name {
-    font-size: 100px;
-    line-height: 90px;
+    font-size: 56px;
+    line-height: 80px;
     color:#000000;
     margin-bottom: $gap;
+
+    @include bp(tablet) {
+      font-size: 72px;
+    }
     
     &--heavy {
       font-weight: bold;
@@ -35,7 +40,12 @@
     }
 
     &-socials {
-      font-size: 24px;
+      font-size: 18px;
+      text-align: center;
+
+      @include bp(tablet) {
+        font-size: 24px;
+      }
 
       * + * {
         margin-left: 48px;
