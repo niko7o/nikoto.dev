@@ -1,6 +1,5 @@
 {
-  "name": "nikoto.dev",
-  "homepage": "https://nikoto.dev",
+  "name": "nikotodev",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +12,7 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
