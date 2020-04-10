@@ -50,7 +50,7 @@ const Terminal = () => {
       <div className="terminal__screen">
         <p className="terminal__screen-hint"></p>
         <div className="terminal__screen-results">
-          {commandHistory.map((pastCommand, i) => (
+          {commandHistory.slice(0).reverse().map((pastCommand, i) => (
             <div className="terminal__screen-row" key={`${pastCommand}${i}`}>
               <p className="terminal__command">C:\users\guest - {pastCommand}</p>
               <p className="terminal__result">{commands[pastCommand] && commands[pastCommand].result || 'Command not found. Type "help" for more info.'}</p>
