@@ -41,9 +41,9 @@ export const commandHelperHints = {
     result: <img src="./images/avatar-niko.jpg" alt="weapon" width="100"/>
   },
   'home': {
-    result: 'Navigating to onboarding.'
+    result: 'Navigated to home.'
   },
   'projects': {
-    result: 'Navigating to projects. This section is still under construction. Feel free to check back on it later! You can go back to the first screen by writing "home"'
+    result: 'Navigated to projects. This section is still under construction. Feel free to check back on it later! You can go back to the first screen by writing "home"'
   }
 }
