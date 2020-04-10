@@ -7,8 +7,8 @@
   margin: 0 auto;
 
   &__name {
-    font-size: 56px;
-    line-height: 80px;
+    font-size: 46px;
+    line-height: 70px;
     color:#000000;
     margin-bottom: $gap;
 
@@ -28,8 +28,11 @@
   &__occupation {
     color: $gray;
     margin-bottom: $gap * 3;
-    font-size: 32px;
+    font-size: 18px;
     text-align: left;
+    @include bp(tablet) {
+      font-size: 32px;
+    }
   }
 
   &__information {
