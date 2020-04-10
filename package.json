@@ -1,6 +1,6 @@
 {
   "name": "nikotodev",
-  "homepage": "http://nikotomad.github.io/nikoto.dev",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
