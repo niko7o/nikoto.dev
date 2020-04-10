@@ -1,32 +1,10 @@
 import React, { useState } from 'react';
 
+import { commands } from '../utils/terminal';
+
 import './Terminal.scss';
 
-const commands = {
-  'help': {
-    result: '[available commands are]: skills, about'
-  },
-  'whois weapon': {
-    result: <img src="./images/avatar-niko.jpg" width="100"/>
-  },
-  'about': {
-    result: 'Based in Madrid. Software Engineer. Worst engineer at the company but third coolest.'
-  },
-  'skills': {
-    result: 
-    <>
-      <p>Frontend: React, React Native, Redux</p>
-      <p>Backend & DB: Node.js + Mongo</p>
-      <p>Testing: Jest, Cypress, Detox</p>
-      <p>Other: Test driven development, BDD, Kibana, Grafana</p>
-    </>
-  },
-  'clear': {
-    result: ''
-  }
-}
-
-const PATH_PREFIX = "C:\\users\\guest";
+const PATH_PREFIX = "C:\\user\\guest";
 
 const Terminal = () => {
   const [commandHistory, setCommandHistory] = useState([]);
