@@ -17,10 +17,10 @@ const Projects = ({ isVisible }) => (
       >
         <div className="projects">
           <div className="projects__project">
-            <div className="projects__project-header">
-              <h2 className="projects__project-title">digital rain.</h2>
+          <div className="projects__project-header">
+            <h2 className="projects__project-title">digital rain.</h2>
             </div>
-            
+
             <div className="projects__project-image-wrapper">
               <div className="projects__project-demo">
                 <a 
@@ -39,7 +39,7 @@ const Projects = ({ isVisible }) => (
               </div>
               <img className="projects__project-image" src="./images/projects/matrix-rain.gif" alt="project_image" />
             </div>
-            
+
             <div className="projects__project-description">
               <span className="project__technology-badge">Technologies</span>
               <span className="project__technology-info">P5.JS, Canvas, Javascript</span>
