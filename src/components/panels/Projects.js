@@ -18,7 +18,7 @@ const Projects = ({ isVisible }) => (
         <div className="projects">
           <div className="projects__project">
             <div className="projects__project-header">
-              <h2 className="projects__project-title">DIGITAL RAIN</h2>
+              <h2 className="projects__project-title">digital rain.</h2>
             </div>
             
             <div className="projects__project-image-wrapper">
@@ -29,8 +29,8 @@ const Projects = ({ isVisible }) => (
                   rel="noopener noreferrer">
                     <motion.button
                       className="projects__project-demo-btn"
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
+                      whileHover={{ scale: 1.048 }}
+                      whileTap={{ scale: 0.90 }}
                     >
                       View Demo
                     </motion.button>

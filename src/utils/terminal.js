@@ -38,6 +38,6 @@ export const commandHelperHints = {
     result: 'Navigated to home.'
   },
   'projects': {
-    result: 'Navigated to projects. This section is still under construction. Feel free to check back on it later! You can go back to the first screen by writing "home"'
+    result: 'This section is still under construction. Feel free to check back on it later! You can go back to the first screen by writing "home" or look for commands with "help"'
   }
 }

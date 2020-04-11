@@ -2,8 +2,7 @@
   &__project {
     &-title {
       text-align: right;
-      text-transform: uppercase;
-      font-size: 40px;
+      font-size: 60px;
     }
 
     &-description {
@@ -22,13 +21,13 @@
         text-decoration: none;
         font-size: 14px;
         cursor: pointer;
-        backface-visibility: hidden;
-        -webkit-font-smoothing: subpixel-antialiased;
         position: absolute;
         bottom: -14px;
         right: 28px;
-        width: 140px;
-        margin: auto;
+
+        backface-visibility: hidden;
+        -webkit-font-smoothing: subpixel-antialiased;
+        transform: translateZ(0)
       }
     }
 
@@ -39,7 +38,7 @@
     &-header {
       display: flex;
       align-items: center;
-      margin-bottom: 24px;
+      margin-bottom: 12px;
     }
 
     &-image {
