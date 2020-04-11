@@ -11,23 +11,25 @@
 
     &-demo {
       margin-top: 12px;
+
       &-btn {
+        font-size:  14px;
         outline: none;
         border: black;
         border-radius: 6px;
         background-color: #ffc83d;
         color: black;
-        padding: 12px 24px;
+        padding: 12px 14px;
         text-decoration: none;
-        font-size: 14px;
         cursor: pointer;
         position: absolute;
         bottom: -14px;
         right: 28px;
+        display: flex;
+        align-items: center;
 
         backface-visibility: hidden;
         -webkit-font-smoothing: subpixel-antialiased;
-        transform: translateZ(0)
       }
     }
 
@@ -38,7 +40,7 @@
     &-header {
       display: flex;
       align-items: center;
-      margin-bottom: 12px;
+      margin-bottom: 18px;
     }
 
     &-image {
@@ -56,4 +58,10 @@
     width: 380px;
     left: -10px;
   }
+}
+
+.icon-eye {
+  width: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
 }

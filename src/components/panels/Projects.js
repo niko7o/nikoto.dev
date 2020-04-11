@@ -29,9 +29,10 @@ const Projects = ({ isVisible }) => (
                   rel="noopener noreferrer">
                     <motion.button
                       className="projects__project-demo-btn"
-                      whileHover={{ scale: 1.048 }}
+                      whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.90 }}
                     >
+                      <img className="icon-eye" src="./images/icons/eye.png" alt="demo" />
                       View Demo
                     </motion.button>
                 </a>
