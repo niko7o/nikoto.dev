@@ -9,8 +9,8 @@ import './Projects.scss';
 const projects = {
   digitalRain: {
     name: 'digital rain.',
-    link: 'www.google.com',
-    image: './images/projects/matrix-rain.gif',
+    link: 'https://nikotomad.github.io/matrix-rain',
+    image: './images/projects/matrix-rain-min.gif',
     technologies: 'P5.JS, Canvas, Javascript'
   }
 }
