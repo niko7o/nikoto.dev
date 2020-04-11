@@ -1,17 +1,22 @@
 import React from 'react';
 
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion";
 
-const Projects = () => (
-  <AnimatePresence>
-    <motion.div 
-      initial={{ opacity: 0 }} 
-      animate={{ opacity: 1 }} 
-      exit={{ opacity: 0 }}
+const Projects = ({ isVisible }) => (
+  isVisible && (
+    <motion.div
+      initial={{ y: -400 }} 
+      animate={{ y: 0 }} 
+      transition={{
+        y: { type: "spring", stiffness: 100 },
+        default: { duration: 1 },
+      }}
     >
-      <h1>Projects</h1>
+      <div className="projects">
+        <h1>Projects</h1>
+      </div>
     </motion.div>
-  </AnimatePresence>
+  )
 );
 
 export default Projects;
