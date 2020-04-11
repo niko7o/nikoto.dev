@@ -8,9 +8,7 @@ import './resets.css';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Homepage />
-  </React.StrictMode>,
+  <Homepage />,
   document.getElementById('root')
 );
 

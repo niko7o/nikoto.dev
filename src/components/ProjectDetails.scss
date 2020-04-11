@@ -1,0 +1,33 @@
+.project-details__title {
+  text-align: left;
+  font-size: 60px;
+}
+
+.project-details__container {
+  position: relative;
+}
+
+.project-details__demo {
+  margin-top: 12px;
+}
+
+.project-details__image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project-details__button {
+  z-index: 2;
+}
+
+.project-details__description {
+  font-size: 14px;
+  margin-top: 24px;
+
+  &-badge {
+    padding: 12px 8px;
+    border-radius: 4px;
+    background-color: #e5e5e5;
+    margin-right: 8px;
+  }
+}
