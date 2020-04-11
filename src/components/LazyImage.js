@@ -10,7 +10,7 @@ const LazyImage = ({ imageUrl, alt, className }) => {
   }
   
   const imageClasses = 
-    `lazy-image ${loaded ? 'lazy-image--loaded' : ''} ${className && className}`;
+    `lazy-image ${loaded ? 'lazy-image--loaded' : ''} ${!!className && className}`;
 
   return (
     <div className="lazy-image-container">
