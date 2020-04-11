@@ -41,7 +41,8 @@ const Projects = ({ isVisible }) => (
             </div>
             
             <div className="projects__project-description">
-              <p>P5.JS Library, Canvas, Javascript</p>
+              <span className="project__technology-badge">Technologies</span>
+              <span className="project__technology-info">P5.JS, Canvas, Javascript</span>
             </div>
           </div>
         </div>

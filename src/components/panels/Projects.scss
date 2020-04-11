@@ -60,6 +60,16 @@
   }
 }
 
+.project__technology {
+  &-badge {
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #e5e5e5;
+    margin-right: 8px;
+  }
+}
+
 .icon-eye {
   width: 20px;
   margin-right: 8px;
