@@ -1,0 +1,60 @@
+.projects {
+  &__project {
+    &-title {
+      text-align: right;
+      text-transform: uppercase;
+      font-size: 40px;
+    }
+
+    &-description {
+      margin-top: 24px;
+    }
+
+    &-demo {
+      margin-top: 12px;
+      &-btn {
+        outline: none;
+        border: black;
+        border-radius: 6px;
+        background-color: #ffc83d;
+        color: black;
+        padding: 12px 24px;
+        text-decoration: none;
+        font-size: 14px;
+        cursor: pointer;
+        backface-visibility: hidden;
+        -webkit-font-smoothing: subpixel-antialiased;
+        position: absolute;
+        bottom: -14px;
+        right: 28px;
+        width: 140px;
+        margin: auto;
+      }
+    }
+
+    &-star {
+      margin-left: 24px;
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    &-image {
+      &-wrapper {
+        position: relative;
+      }
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 40px;
+    width: 380px;
+    left: -10px;
+  }
+}

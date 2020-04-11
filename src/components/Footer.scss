@@ -4,4 +4,8 @@
   left: 0;
   width: 100%;
   text-align: center;
+
+  span > div {
+    box-shadow: 0px 9px 13px 1px #00000054;
+  }
 }
