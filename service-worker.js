@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/nikoto.dev/precache-manifest.fa8eb1d3af8b4d272fe16eb8053b78c2.js"
+  "/nikoto.dev/precache-manifest.f2345782317681fd69d9e6853ce5258e.js"
 );
 
 self.addEventListener('message', (event) => {

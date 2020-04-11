@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/nikoto.dev/static/css/main.0e6669ca.chunk.css",
-    "main.js": "/nikoto.dev/static/js/main.88eeab24.chunk.js",
-    "main.js.map": "/nikoto.dev/static/js/main.88eeab24.chunk.js.map",
+    "main.js": "/nikoto.dev/static/js/main.89cd40b9.chunk.js",
+    "main.js.map": "/nikoto.dev/static/js/main.89cd40b9.chunk.js.map",
     "runtime-main.js": "/nikoto.dev/static/js/runtime-main.cbd98ce8.js",
     "runtime-main.js.map": "/nikoto.dev/static/js/runtime-main.cbd98ce8.js.map",
     "static/js/2.130c3f22.chunk.js": "/nikoto.dev/static/js/2.130c3f22.chunk.js",
     "static/js/2.130c3f22.chunk.js.map": "/nikoto.dev/static/js/2.130c3f22.chunk.js.map",
     "index.html": "/nikoto.dev/index.html",
-    "precache-manifest.fa8eb1d3af8b4d272fe16eb8053b78c2.js": "/nikoto.dev/precache-manifest.fa8eb1d3af8b4d272fe16eb8053b78c2.js",
+    "precache-manifest.f2345782317681fd69d9e6853ce5258e.js": "/nikoto.dev/precache-manifest.f2345782317681fd69d9e6853ce5258e.js",
     "service-worker.js": "/nikoto.dev/service-worker.js",
     "static/css/main.0e6669ca.chunk.css.map": "/nikoto.dev/static/css/main.0e6669ca.chunk.css.map",
     "static/js/2.130c3f22.chunk.js.LICENSE.txt": "/nikoto.dev/static/js/2.130c3f22.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.cbd98ce8.js",
     "static/js/2.130c3f22.chunk.js",
     "static/css/main.0e6669ca.chunk.css",
-    "static/js/main.88eeab24.chunk.js"
+    "static/js/main.89cd40b9.chunk.js"
   ]
 }
