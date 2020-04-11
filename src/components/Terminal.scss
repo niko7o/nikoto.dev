@@ -35,6 +35,10 @@ $border-radiuses: 8px;
     }
   }
 
+  &__command {
+    color: #6fb96f;
+  }
+
   &__screen {
     font-size: $terminal-font-size;
     font-family: monospace;
