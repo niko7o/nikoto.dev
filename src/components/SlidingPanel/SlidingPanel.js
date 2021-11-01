@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Onboarding from './panels/Onboarding';
-import Projects from './panels/Projects';
+import Onboarding from '../Panels/Onboarding';
+import Projects from '../Panels/Projects';
 
 import './SlidingPanel.scss';
 

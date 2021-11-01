@@ -1,0 +1,35 @@
+.project-details {
+  &__title {
+    text-align: left;
+    font-size: 82px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__demo {
+    margin-top: 12px;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  &__button {
+    z-index: 2;
+  }
+
+  &__description {
+    font-size: 14px;
+    margin-top: 24px;
+  
+    &-badge {
+      padding: 12px 8px;
+      border-radius: 4px;
+      background-color: #e5e5e5;
+      margin-right: 8px;
+    }
+  }
+}

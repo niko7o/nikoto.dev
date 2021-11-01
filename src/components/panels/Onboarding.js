@@ -29,7 +29,10 @@ const Onboarding = ({ isVisible }) => (
             </p>
           </div>
 
-          <code className="onboarding__teaser">Want to know me better? Use the terminal. <br />Start by typing "help" and pressing enter.</code>
+          <code className="onboarding__teaser">
+            Want to know me better? Use the terminal. <br />
+            Start by typing "<span className="onboarding__teaser-command">help</span>" and pressing enter.
+          </code>
 
           <div className="onboarding__information-socials">
             <a 

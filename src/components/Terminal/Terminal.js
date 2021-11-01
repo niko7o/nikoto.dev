@@ -1,7 +1,7 @@
 /* eslint-disable no-mixed-operators */
 import React, { useState } from 'react';
 
-import { commandHelperHints } from '../utils/terminal';
+import { commandHelperHints } from '../../utils/terminal';
 
 import './Terminal.scss';
 

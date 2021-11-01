@@ -1,8 +1,8 @@
 import React from 'react';
 
-import AnimatedButton from './AnimatedButton';
+import AnimatedButton from '../AnimatedButton';
 
-import LazyImage from './LazyImage';
+import LazyImage from '../LazyImage';
 
 import './ProjectDetails.scss';
 

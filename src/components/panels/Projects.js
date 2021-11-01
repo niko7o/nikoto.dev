@@ -2,7 +2,7 @@ import React from 'react';
 
 import { motion } from "framer-motion";
 
-import ProjectDetails from '../ProjectDetails';
+import ProjectDetails from '../ProjectDetails/ProjectDetails';
 
 import './Projects.scss';
 
@@ -22,7 +22,10 @@ const Projects = ({ isVisible }) => (
         initial={{ y: -1000 }} 
         animate={{ y: 0 }} 
         transition={{
-          y: { type: "spring", stiffness: 100 },
+          y: { 
+            type: "spring", 
+            stiffness: 100 
+          },
           default: { duration: 1 },
         }}
       >

@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 
-import SlidingPanel from './SlidingPanel';
-import Terminal from './Terminal';
-import Footer from './Footer';
+import SlidingPanel from '../SlidingPanel/SlidingPanel';
+import Terminal from '../Terminal';
+import Footer from '../Footer';
 
-import { PanelProvider } from '../contexts/panel-context';
+import { PanelProvider } from '../../contexts/panel-context';
 
-import './Homepage.scss';
+import './Home.scss';
 
 const DEFAULT_INITIAL_STEP = 'onboarding';
 
-const Homepage = () => {
+const Home = () => {
   const [currentStep, setCurrentStep] = useState(DEFAULT_INITIAL_STEP);
 
   const panelContext = {
@@ -20,7 +20,7 @@ const Homepage = () => {
   
   return (
     <PanelProvider value={panelContext}>
-      <div className="homepage">
+      <div className="home">
         <SlidingPanel panelContext={panelContext} />
         <Terminal panelContext={panelContext} />
         <Footer />
@@ -29,4 +29,4 @@ const Homepage = () => {
   )
 }
 
-export default Homepage;
+export default Home;

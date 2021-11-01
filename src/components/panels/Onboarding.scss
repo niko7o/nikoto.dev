@@ -1,5 +1,4 @@
 @import '../../styles/base.scss';
-@import '../../styles/animations.scss';
 
 .onboarding {
   color: #000000;
@@ -30,10 +29,16 @@
 
   &__teaser {
     display: none;
+
     @include bp(desktop) {
       display: block;
       font-size: 18px;
-      margin: $gap*2 0;
+      margin: $gap * 2 0;
+   
+      &-command {
+        font-weight: bold;
+        text-decoration: underline;
+      }
     }
   }
 
