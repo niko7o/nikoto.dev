@@ -10,7 +10,10 @@ const Onboarding = ({ isVisible }) => (
         initial={{ y: -400 }} 
         animate={{ y: 0 }}
         transition={{
-          y: { type: "spring", stiffness: 100 },
+          y: { 
+            type: "spring", 
+            stiffness: 100 
+          },
           default: { duration: 1 },
         }}
       >
@@ -21,7 +24,7 @@ const Onboarding = ({ isVisible }) => (
               I'm <span className="onboarding__name--heavy">nikoto.</span>
             </p>
             <p className="onboarding__occupation">
-              Software Engineer<br />
+              Senior Software Engineer<br />
               @ Spotahome  <img className="onboarding__spotahome" src="./images/spotahome.jpg" alt="spotahome logo" />
             </p>
           </div>

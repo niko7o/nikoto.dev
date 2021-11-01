@@ -5,8 +5,6 @@ import { commandHelperHints } from '../utils/terminal';
 
 import './Terminal.scss';
 
-const TERMINAL_PATH_PREFIX = "/dev/guest";
-
 const Terminal = ({ panelContext }) => {
   const [commandHistory, setCommandHistory] = useState([]);
   const [command, setCommand] = useState('');
@@ -40,12 +38,14 @@ const Terminal = ({ panelContext }) => {
       <div className="terminal__navbar">
         <span className="terminal__navbar-close" />
       </div>
+      
       <div className="terminal__screen">
         <div className="terminal__screen-results">
           {commandHistory && commandHistory.map((cmd, i) => (
             <div className="terminal__screen-row" key={`${cmd}${i}`}>
               <p className="terminal__command">
-                {`${TERMINAL_PATH_PREFIX} → ${cmd}`}
+                <span>/dev/guest</span> → {cmd}
+                {/* {`${TERMINAL_PATH_PREFIX} → ${cmd}`} */}
               </p>
               <p className="terminal__result">
                 {
@@ -57,8 +57,9 @@ const Terminal = ({ panelContext }) => {
           ))}
         </div>
       </div>
+      
       <div className="terminal__actions" onKeyDown={handleTerminalKeyPressed}>
-          <span className="terminal__actions-symbol">{`$ ${TERMINAL_PATH_PREFIX}`}</span>
+          <span className="terminal__actions-prefix">$ /dev/<strong>guest</strong></span>
           <input 
             autoFocus 
             type="text" 
@@ -66,7 +67,7 @@ const Terminal = ({ panelContext }) => {
             value={command}
             onChange={handleInputChange}
             tabIndex="0"
-            placeholder="type command.."
+            placeholder="Type command.."
           />
       </div>
     </div>

@@ -14,7 +14,7 @@ export const commandHelperHints = {
     </>
   },
   'about': {
-    result: 'Based in Madrid. Software Engineer. Worst engineer at the company but third coolest.'
+    result: 'Based in Madrid. Senior Software Engineer. Worst engineer at the company but third coolest.'
   },
   'team': {
     result: <img loading="eager" src="./images/broccoli.png" alt="brocolli" width="50"/>
@@ -23,9 +23,11 @@ export const commandHelperHints = {
     result: 
     <>
       <p>Frontend: React, React Native, Redux</p>
-      <p>Backend & DB: Node.js + Mongo</p>
-      <p>Testing: Jest, Cypress, Detox</p>
-      <p>Other: Test driven development, BDD, Kibana, Grafana</p>
+      <p>Backend & DB: PHP, Node.js, Mongo</p>
+      <p>Unit Tests: Jest &amp; Enzyme</p>
+      <p>Integration Tests: Cypress, Detox</p>
+      <p>Observability: New Relic One, Lens (Kubernetes IDE), cluster handling with kubectl</p>
+      <p>Other / Misc: Test driven development, Behaviour-driven Development with Cucumber &amp; Gherkin, Kibana, Grafana</p>
     </>
   },
   'clear': {
